@@ -6,7 +6,7 @@
 
 This repository contains the code used in our paper *Reproducible Evaluation of Camera Auto-Exposure Methods in the Field: Platform, Benchmark and Lessons Learned* submitted to Transaction on Field Robotics for the ICRA2024 Workshop special issue.
 
-The repository will continue to grow in the following weeks, but for now, we provide a first restricted version of the code that allows to run the whole pipeline (emulation and ORB-SLAM2) with a sample from the dataset. As mentioned in the paper, we added, as a submodule in this repository, the main code-base used in the backpack at `backpack_workspace` folder.
+The repository will continue to grow in the following weeks, but for now, we provide a first restricted version of the code that allows to run the whole pipeline (emulation and ORB-SLAM2) with a sample from the dataset. As mentioned in the paper, we added the main code-base used in the backpack at the `backpack_workspace` folder (submodule).
 
 You can also access the original BorealHDR dataset and code from our IROS2024 paper *Exposing the Unseen: Exposure Time Emulation for Offline Benchmarking of Vision Algorithms* at the following link [BorealHDR](https://github.com/norlab-ulaval/BorealHDR).
 
