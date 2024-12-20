@@ -1,0 +1,11 @@
+[submodule "backpack_workspace"]
+	path = backpack_workspace
+	url = git@github.com:norlab-ulaval/backpack_workspace.git
+[submodule "BorealHDR"]
+	path = BorealHDR
+	url = git@github.com:norlab-ulaval/BorealHDR.git
+	branch = TFR2024
+[submodule "ORB_SLAM2"]
+	path = ORB_SLAM2
+	url = git@github.com:norlab-ulaval/ORB_SLAM2.git
+	branch = TFR2024

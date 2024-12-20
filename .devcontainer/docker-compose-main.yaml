@@ -1,0 +1,27 @@
+version: '3'
+services:
+  tfr2024_borealhdr:
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile
+    container_name: tfr2024_borealhdr
+    stdin_open: true
+    tty: true
+    privileged: true
+    network_mode: "host"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    environment:
+      - DISPLAY=${DISPLAY}  
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all
+    command: ["bash"]
+    volumes:
+      - /dev/shm:/dev/shm
+      - ../:/home/user/code
+      # - <LINK TO THE DATA>:/home/user/data
