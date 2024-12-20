@@ -43,6 +43,7 @@ docker exec -it tfr2024_borealhdr /bin/bash
 When you are inside the docker container, you will have to build `ORB-SLAM2`
 ```bash
 cd /home/user/code/ORB_SLAM2/
+git checkout TFR2024
 ./build.sh
 ```
 
